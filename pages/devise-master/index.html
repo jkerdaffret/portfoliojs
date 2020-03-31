@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <div id="night-mode"><i id="icon" class="fas fa-moon"></i></div>
+     <h2></i>Taux de change</h2>
+     <table>
+         <tr>
+             <td><input  type="text" size="15" id="fromAmount" onkeyup="recupererValeur()" /></td>
+             <td>
+                 <select id="from" onchange="recupererValeur()">
+                   <option value="EUR">Euro (EUR)</option>
+                   <option value="USD">Dollars US (USD)</option>
+                   <option value="JPY">Japanese Yen (JPY)</option>
+                   <option value="GBP">Livres(GBP)</option>
+                   <option value="ZAR">Rand (ZAR)</option>
+                   <option value="AUD">Dollars AUS (AUD)</option>
+                   <option value="BRL">Real (BRL)</option>
+                   <option value="CAD">Dollars CAN (CAD)</option>
+                   <option value="CNY">Yuan (CNY)</option>
+                   <option value="INR">Roupies (INR)</option>
+                   <option value="SGD">Dollars SIN (SGD)</option>
+                   <option value="CHF">Franc Suisse (CHF)</option>
+                   <option value="AED">Dirham UAE (AED)</option>
+                   <option value="VND">Dong (VND)</option>
+                 </select>
+             </td>
+         </tr>
+         <tr>
+            <td><input type="text" size="15" id="toAmount" disabled/></td>
+             <td>
+                 <select id="to" onchange="recupererValeur()">
+                   <option value="GBP">Livres(GBP)</option>
+                   <option value="JPY">Japanese Yen (JPY)</option>
+                   <option value="USD">Dollars US (USD)</option>
+                   <option value="EUR">Euro (EUR)</option>
+                   <option value="ZAR">Rand (ZAR)</option>
+                   <option value="AUD">Dollars AUS (AUD)</option>
+                   <option value="BRL">Real (BRL)</option>
+                   <option value="CAD">Dollars CAN (CAD)</option>
+                   <option value="CNY">Yuan (CNY)</option>
+                   <option value="INR">Roupies (INR)</option>
+                   <option value="SGD">Dollars SIN (SGD)</option>
+                   <option value="CHF">Franc Suisse (CHF)</option>
+                   <option value="AED">Dirham UAE (AED)</option>
+                   <option value="VND">Dong (VND)</option>
+                 </select>
+             </td>
+         </tr>
+     </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

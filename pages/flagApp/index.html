@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Flag App</h1>
+    <div id="main-container">
+        <div id="cards-container" class="cards">
+            <div class="card active">
+                <div class="inner-card">
+                    <div id="flag-container" class="inner-card-front">
+                        <img src="" alt="">
+                    </div>
+                    <div class="inner-card-back">
+                        <div id="info-container">
+                            <div class="custom-select"><select id="countries"></select></div>
+                            <p><span id="capital"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <button type="submit"  onClick="refreshPage()" class="random">Random</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#accueil">Portfolio <i class="fab fa-js text-warning"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                API
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#weather">Weather App</a>
+                <a class="dropdown-item" href="#flag">Flag App</a>
+                <a class="dropdown-item" href="#devise">Money Converter</a>
+                <a class="dropdown-item" href="#reader">English Reader</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Games
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#snake">Snake</a>
+                <a class="dropdown-item" href="#pendu">Hangman</a>
+                <a class="dropdown-item" href="#typing">Typing</a>
+                <a class="dropdown-item" href="#memo">Memory Questions</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Practical
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#relax">Relaxer</a>
+                <a class="dropdown-item" href="#seat">Movie Seat</a>
+                <a class="dropdown-item" href="#expense">Expense Tracker</a>
+                <a class="dropdown-item" href="#newyear">New Year Countdown</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Starting
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#calculate">Calculatrice</a>
+                <a class="dropdown-item" href="#count">Counter</a>
+                <a class="dropdown-item" href="#slide">Slider</a>
+                <a class="dropdown-item" href="#age">Day Age Counter</a>
+              </div>
+            </li> 
+          </ul>
+        </div>
+      </nav>
+
+    <div id="accueil" class="container-fluid">
+        <div class="vertical"></div>
+        <div class="horizontal"></div>
+        <h1>Portfolio<br>
+        Javascript</h1>
+    </div>
+    
+
+    <div id="projets" class="container">
+        <div class="carte overflow-hidden">
+            <div id="weather"></div>  
+            <div class="weather overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/WeatherApp/index.html" target="_blank" class="text-white">WeatherApp</a>
+            </div>
+        </div>
+   
+        <div class="carte overflow-hidden">
+            <div id="flag"></div>  
+            <div class="flag overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/flagApp/index.html" target="_blank" class="text-white">FlagApp</a>
+            </div>
+        </div>
+   
+        <div class="carte overflow-hidden">
+            <div id="devise"></div>  
+            <div class="devise overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/devise-master/index.html" target="_blank" class="text-white">Devise Master</a>
+            </div>
+        </div>
+ 
+        <div class="carte overflow-hidden">
+            <div id="reader"></div>  
+            <div class="reader overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/SpeechTextReader/index.html" target="_blank" class="text-white">English Reader</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="snake"></div>  
+            <div class="snake overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/Snake/index.html" target="_blank" class="text-white">Snake</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="pendu"></div>  
+            <div class="pendu overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/HangmanGame/index.html" target="_blank" class="text-white">Hangman Game</a>
+            </div>
+        </div>
+    
+        <div class="carte overflow-hidden">
+            <div id="typing"></div>  
+            <div class="typing overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/TypingGame/index.html" target="_blank" class="text-white">Typing Game</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="memo"></div>  
+            <div class="memo overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/Memory Card/index.html" target="_blank" class="text-white">Memory Questions</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="relax"></div>  
+            <div class="relax overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/RelaxerApp/index.html" target="_blank" class="text-white">Relaxer</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="seat"></div>  
+            <div class="seat overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/movie-seat-booking/index.html" target="_blank" class="text-white">Movie Seats</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="expense"></div>  
+            <div class="expense overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/ExpenseTracker/index.html" target="_blank" class="text-white">Expensse Tracker</a>
+            </div>
+        </div>
+  
+        <div class="carte overflow-hidden">
+            <div id="newyear"></div>  
+            <div class="newyear overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/NewYearCountdown/index.html" target="_blank" class="text-white">New Year Countdown</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="calculate"></div>  
+            <div class="calculate overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/Calculatrice/index.html" target="_blank" class="text-white">Calculatrice</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="count"></div>  
+            <div class="count overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/compteur/index.html" target="_blank" class="text-white">Counter</a>
+            </div>
+        </div>
+ 
+        <div class="carte overflow-hidden">
+            <div id="slider"></div>  
+            <div class="slider overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/Carousel/index.html" target="_blank" class="text-white">Slider</a>
+            </div>
+        </div>
+
+        <div class="carte overflow-hidden">
+            <div id="age"></div>  
+            <div class="age overlay position-absolute text-center py-5 d-flex flex-column justify-content-center">
+                <a href="./pages/dayAgeCalculator/index.html" target="_blank" class="text-white">Day Age Counter</a>
+            </div>
+        </div>
+     </div>  
+
+    <div class="container footer">
+       <ul class="d-flex justify-content-center align-items-flex-start">
+           <li><div class="circle"><a href="https://www.facebook.com/julien.kerdaffret?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a></div></li>
+           <li><div class="circle"><a href="https://www.instagram.com/julienk_pro/" target="_blank"><i class="fab fa-instagram"></i></a></div></li>
+           <li><div class="circle"><a href="https://www.pinterest.fr/jkerdaffret/" target="_blank"><i class="fab fa-pinterest-p"></i></a></div></li>
+           <li><div class="circle"><a href="https://www.linkedin.com/in/julien-kerdaffret-4061a795/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div></li>
+       </ul>
+    </div>
+ 
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

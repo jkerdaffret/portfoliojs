@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.37);
+    box-shadow: 1px 1px 5px rgba(236, 223, 43, 0.582);
+}
+/* rgba(0, 0, 0, 0.507) */
+
+nav a {
+    color: rgb(29, 29, 29);
+    margin-right: 10px;
+    border: 2px solid transparent;
+    padding: 0 2px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav ul a:hover {
+    border: 2px solid rgba(236, 223, 43, 0.555);
+    background: rgba(173, 173, 173, 0.041);
+}
+
+#accueil {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 300px;
+}
+
+div .vertical {
+    width: 1px;
+    height: 1000px;
+    background: rgb(236, 223, 43);
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+}
+
+div .horizontal {
+    width: 2000px;
+    height: 1px;
+    background: rgb(236, 223, 43);
+    position: absolute;
+    top: 650px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 900;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    color: rgb(41, 41, 41);
+}
+
+#projets {
+    position: relative;
+}
+
+#weather {
+    width: 650px;
+    height: 500px;
+    background: url(./img/weatherApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.weather {
+    width: 650px;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+#flag {
+    width: 450px;
+    height: 300px;
+    background: url(./img/flagApp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 650px;
+    border: 1px solid rgb(236, 223, 43);
+}
+
+.flag {
+    width: 450px;
+    height: 300px;
+    top: 0;
+    left: 650px;
+}
+
+#devise {
+    width: 450px;
+    height: 200px;
+    background: url(./img/devise.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 300px;
+    left: 650px;
+}
+
+.devise {
+    width: 450px;
+    height: 200px;
+    top: 300px;
+    left: 650px;
+}
+
+#reader {
+    width: 300px;
+    height: 200px;
+    background: url(./img/reader.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 500px;
+    left: 0;
+}
+
+.reader {
+    width: 300px;
+    height: 200px;
+    top: 500px;
+    left: 0;
+}
+
+#snake {
+    width: 500px;
+    height: 350px;
+    background: url(./img/snake.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 500px;
+    left: 600px;
+}
+
+.snake {
+    width: 500px;
+    height: 350px;
+    top: 500px;
+    left: 600px;
+}
+
+#pendu {
+    width: 300px;
+    height: 200px;
+    background: url(./img/hangman.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 500px;
+    left: 300px;
+}
+
+.pendu {
+    width: 300px;
+    height: 200px;
+    top: 500px;
+    left: 300px;
+}
+
+#typing {
+    width: 500px;
+    height: 300px;
+    background: url(./img/typing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 850px;
+    left: 600px;
+}
+
+.typing {
+    width: 500px;
+    height: 300px;
+    top: 850px;
+    left: 600px;
+}
+
+#memo {
+    width: 400px;
+    height: 200px;
+    background: url(./img/memory.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1150px;
+    left: 700px;
+}
+
+.memo {
+    width: 400px;
+    height: 200px;
+    top: 1150px;
+    left: 700px;
+}
+
+#relax {
+    width: 600px;
+    height: 450px;
+    background: url(./img/breathe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 700px;
+    left: 0;
+}
+
+.relax {
+    width: 600px;
+    height: 450px;
+    top: 700px;
+    left: 0;
+}
+
+#seat {
+    width: 400px;
+    height: 200px;
+    background: url(./img/seat.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1350px;
+    left: 700px;
+}
+
+.seat {
+    width: 400px;
+    height: 200px;
+    top: 1350px;
+    left: 700px;
+}
+
+#expense {
+    width: 400px;
+    height: 350px;
+    background: url(./img/expense.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1550px;
+    left: 700px;
+}
+
+.expense {
+    width: 400px;
+    height: 350px;
+    top: 1550px;
+    left: 700px;
+}
+
+#newyear {
+    width: 700px;
+    height: 500px;
+    background: url(./img/NewYear.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1150px;
+    left: 0;
+}
+
+.newyear {
+    width: 700px;
+    height: 500px;
+    top: 1150px;
+    left: 0;
+}
+
+#calculate {
+    width: 350px;
+    height: 250px;
+    background: url(./img/calculatrice.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1650px;
+    left: 0;
+}
+
+.calculate {
+    width: 350px;
+    height: 250px;
+    top: 1650px;
+    left: 0;
+}
+
+#count {
+    width: 550px;
+    height: 350px;
+    background: url(./img/count.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1900px;
+    left: 0;
+}
+
+.count {
+    width: 550px;
+    height: 350px;
+    top: 1900px;
+    left: 0;
+}
+
+#slider {
+    width: 350px;
+    height: 250px;
+    background: url(./img/slide.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1650px;
+    left: 350px;
+}
+
+.slider {
+    width: 350px;
+    height: 250px;
+    top: 1650px;
+    left: 350px;
+}
+
+#age {
+    width: 550px;
+    height: 350px;
+    background: url(./img/ageDay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid rgb(236, 223, 43);
+    top: 1900px;
+    left: 550px;
+    margin-bottom: 100px;
+}
+
+.age {
+    width: 550px;
+    height: 350px;
+    top: 1900px;
+    left: 550px;
+}
+
+
+
+#projets .carte > .overlay {
+    background-color: rgba(30, 30, 30, 0.8);
+    transform: translateX(-2000px);
+    transition: all 0.35s;
+    overflow: hidden;
+    font-size: 28px;
+}
+
+#projets .carte:hover > .overlay {
+    transform: translateX(0)
+}
+
+.footer {
+    width: 1100px;
+    height: 100px;
+    position: absolute;
+    top: 3500px;
+    left: 150px;
+}
+
+.footer .circle {
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgb(236, 223, 43);
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    transition: all 0.5s;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer .circle a {
+    font-size: 25px;
+    color: rgb(236, 223, 43);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.footer .circle:hover {
+    background: rgb(236, 223, 43);
+}
+.footer .circle:hover > a {
+    color: white;
+}

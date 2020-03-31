@@ -1,0 +1,71 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        transition: all 2s linear; 
+    }
+    
+    #box {
+        width:500px;
+        height:300px;
+        margin:10% auto;
+        background: rgba(179, 253, 212, 0.747);
+        border-radius: 20px;
+        position: relative;
+    }
+
+   h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        color: rgb(102, 102, 102);
+    }
+
+    i {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        font-size: 20px;
+        color: rgba(70, 118, 207, 0.699);
+        cursor: pointer;
+    }
+
+   table {
+        margin:0px auto;
+   }
+
+   select {
+       height: 40px;
+       background: rgb(102, 102, 102);
+       border: none;
+       border-radius: 15px;
+       outline: none;
+       margin: 25px 5px;
+       padding: 2px;
+       text-transform: uppercase;
+       color: cornsilk;
+   }
+
+   input {
+       height: 40px;
+       width: 180px;
+       background: rgba(70, 118, 207, 0.699);
+       border-radius: 15px;
+       border: none;
+       outline: none;
+       margin: 25px 5px;
+       padding: 10px;
+       color: cornsilk;
+       font-size: 20px;
+       font-weight: 500;
+   }
+   

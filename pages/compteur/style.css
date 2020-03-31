@@ -1,0 +1,17 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.count{
+    font-size: 30px;
+}
+.btn-container{
+    display: flex;
+}
+.btn-container button{
+    padding: 20px;
+    margin: 10px;
+}
